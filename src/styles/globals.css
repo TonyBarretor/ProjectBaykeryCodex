@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-ivory-50 text-cacao-600 font-sans antialiased;
+}
+
+a {
+  @apply text-burgundy-500 underline-offset-2 transition-colors hover:text-burgundy-600;
+}
+
+button:focus-visible,
+a:focus-visible {
+  @apply outline-none ring-2 ring-burgundy-500 ring-offset-2;
+}
